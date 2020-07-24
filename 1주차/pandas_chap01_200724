@@ -1,0 +1,8 @@
+import pandas as pd
+data_frame = pd.read_csv('friend_list.csv')
+data_frame
+data_frame.tail(2)
+type(data_frame.job)
+s1 = pd.core.series.Series([1,2,3])
+s2 = pd.core.series.Series(['one','two','three'])
+pd.DataFrame(data = dict(num=s1, word=s2))
